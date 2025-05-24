@@ -171,8 +171,8 @@ export const getUploadVideoUrl = async (
   }
 
   try {
-    const uniqueId = uuidv4(); 
-    const s3Key = `videos/${uniqueId}/${fileName}`;   
+    const uniqueId = uuidv4();
+    const s3Key = `videos/${uniqueId}/${fileName}`;
 
     const s3Params = {
       Bucket: process.env.S3_BUCKET_NAME || "",
